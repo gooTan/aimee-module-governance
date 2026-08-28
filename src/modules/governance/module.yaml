@@ -1,0 +1,44 @@
+{
+  "descriptor_version": 1,
+  "id": "governance",
+  "dependencies": [
+    "audit",
+    "config",
+    "delegates",
+    "execution-policy",
+    "gateway",
+    "ir",
+    "module-runtime",
+    "protocols",
+    "routing",
+    "tools",
+    "vault"
+  ],
+  "enabled_by_default": false,
+  "runtime_toggle": {
+    "supported": false
+  },
+  "ownership_complete": true,
+  "sources": [
+    "src/modules/governance/gw_stage_governance.c",
+    "src/modules/governance/module_adapter.c"
+  ],
+  "go_sources": [
+    "server-go/modules/governance/governance.go"
+  ],
+  "go_tests": [
+    "server-go/modules/governance/governance_test.go"
+  ],
+  "public_headers": [
+    "src/modules/governance/include/aimee/governance/module_api.h"
+  ],
+  "private_headers": [
+    "src/modules/governance/gw_stage_governance.h"
+  ],
+  "tests": [
+    "src/tests/test_response_governance_stage.c"
+  ],
+  "docs": [
+    "docs/modules/governance.md"
+  ]
+}

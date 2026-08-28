@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "module": "governance",
+  "classification": "optional",
+  "execution": "process",
+  "runtime": "go",
+  "placements": [
+    "server"
+  ],
+  "principal_class": 1,
+  "principal_ref": 19,
+  "stages": [
+    {
+      "id": 1,
+      "name": "governance-evaluation",
+      "event_kind": 8961
+    }
+  ],
+  "source_sha256": "ca1dbc5cda6b578f22813e40d7372ea0c0444fd533a1067c2e9ae8798c16eddb",
+  "owned_files": [
+    "src/modules/governance/module.yaml",
+    "src/modules/governance/gw_stage_governance.c",
+    "src/modules/governance/module_adapter.c",
+    "src/modules/governance/gw_stage_governance.h",
+    "src/modules/governance/include/aimee/governance/module_api.h",
+    "src/tests/test_response_governance_stage.c",
+    "docs/modules/governance.md",
+    "server-go/modules/governance/governance.go",
+    "server-go/modules/governance/governance_test.go"
+  ]
+}
